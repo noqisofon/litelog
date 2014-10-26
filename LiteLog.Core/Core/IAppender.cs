@@ -15,6 +15,8 @@
 //
 using System;
 
+using LiteLog.Core.Spi;
+
 
 namespace LiteLog.Core {
 
@@ -34,6 +36,6 @@ namespace LiteLog.Core {
         /// Append the specified event_info.
         /// </summary>
         /// <param name="event_info">Event_info.</param>
-        void Append(_EventInfo event_info);
+        void DoAppend(_EventInfo event_info);
     }
 }
